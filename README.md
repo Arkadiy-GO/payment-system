@@ -38,8 +38,10 @@
 
 2. Клонируйте репозиторий:
 
-   ```bash
-   git clone https://github.com/Arkadiy-GO/payment-system.git
+    ```bash
+    git clone https://github.com/Arkadiy-GO/payment-system.git
+    ```
+    ```
    cd payment-system
     ```
 3. Соберите Docker-образ:
