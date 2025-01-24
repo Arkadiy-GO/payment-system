@@ -39,7 +39,7 @@
 2. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/ваш_username/payment-system.git
+   git clone https://github.com/Arkadiy-GO/payment-system.git
    cd payment-system
     ```
 3. Соберите Docker-образ:
@@ -58,18 +58,18 @@
 -c - позволяет выполнить SQL-запрос напрямую из командной строки.
 
 ### API
-1. Отправить средства:
+1. Отправить средства (POST):
     ```
-    POST /api/send
+    http://localhost:8080/api/send
     Body: { "from": "адрес_отправителя", "to": "адрес_получателя", "amount": 10.5 }
     ```
-2. Получить баланс:
+2. Получить баланс (GET):
     ```
-    GET /api/wallet/{address}/balance
+    http://localhost:8080/api/wallet/{address}/balance
     ```
-3. Получить последние транзакции:
+3. Получить последние транзакции (GET):
     ```
-    GET /api/transactions?count=5
+    http://localhost:8080/api/transactions?count=5
     ```
 
 ### Документация
